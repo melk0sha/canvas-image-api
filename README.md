@@ -1,1 +1,1 @@
-# canvas-image-api
+# Deployment: https://melk0sha-image-api.netlify.com
