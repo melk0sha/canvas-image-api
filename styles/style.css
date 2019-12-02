@@ -1,0 +1,244 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: "Hind Siliguri", sans-serif;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+.wrapper header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 48px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.wrapper header img.menu {
+  margin-left: 19px;
+}
+.wrapper header h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 23px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-left: 24px;
+  white-space: nowrap;
+}
+.wrapper header .right-header {
+  display: flex;
+  margin: 0 20px 0 auto;
+}
+.wrapper header .right-header .btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 0 20px 0 auto;
+  width: 228px;
+  height: 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  outline: none;
+  color: #ffffff;
+}
+.wrapper header .right-header .btn img {
+  width: 30px;
+  margin-right: -15px;
+}
+.wrapper header .right-header .btn:hover {
+  background-color: #25669b;
+}
+.wrapper header .right-header .username {
+  display: none;
+  margin-right: 30px;
+  font-size: 20px;
+  color: #000000;
+}
+.wrapper main {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.7);
+}
+.wrapper main .left-menu {
+  display: flex;
+  flex-direction: column;
+  width: 228px;
+  margin-left: 35px;
+}
+.wrapper main .left-menu .tools {
+  height: 165px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.wrapper main .left-menu .tools li {
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+.wrapper main .left-menu .tools li img {
+  margin: 0 20px 1px 18px;
+}
+.wrapper main .left-menu .tools li:hover {
+  background-color: #dadada;
+  cursor: pointer;
+}
+.wrapper main .left-menu .tools li.active {
+  background-color: #0000003a;
+}
+.wrapper main .left-menu .change-color {
+  margin-top: 72px;
+  height: 220px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+}
+.wrapper main .left-menu .change-color li {
+  display: flex;
+  align-items: center;
+  height: 55px;
+}
+.wrapper main .left-menu .change-color li input[type=color] {
+  width: 20px;
+  height: 20px;
+  outline: none;
+  margin: 0 20px 1px 18px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  overflow: hidden;
+}
+.wrapper main .left-menu .change-color li input[type=color]::-webkit-color-swatch {
+  border: none;
+}
+.wrapper main .left-menu .change-color li input[type=color]::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+.wrapper main .left-menu .change-color li input[type=color]:hover {
+  border: 2px solid #000000;
+}
+.wrapper main .left-menu .change-color li:hover {
+  background-color: #dadada;
+  cursor: pointer;
+}
+.wrapper main .left-menu .change-color li:nth-of-type(2) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.wrapper main canvas {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  margin: 0 10px;
+  width: 512px;
+  height: 512px;
+  image-rendering: pixelated;
+}
+.wrapper main .right-menu {
+  display: flex;
+  flex-direction: column;
+  width: 228px;
+  margin-right: 35px;
+}
+.wrapper main .right-menu .switch {
+  height: 154px;
+  margin-bottom: 35px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  /* The container */
+  /* Hide the browser's default radio button */
+  /* Create a custom radio button */
+  /* On mouse-over, add a grey background color */
+  /* When the radio button is checked, add a blue background */
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  /* Show the indicator (dot/circle) when checked */
+  /* Style the indicator (dot/circle) */
+}
+.wrapper main .right-menu .switch .container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin: 15px 0 0 18px;
+  cursor: pointer;
+  font-size: 20px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.wrapper main .right-menu .switch .container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.wrapper main .right-menu .switch .checkmark {
+  position: absolute;
+  top: 3px;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.wrapper main .right-menu .switch .container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+.wrapper main .right-menu .switch .container input:checked ~ .checkmark {
+  background-color: #2196F3;
+}
+.wrapper main .right-menu .switch .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+.wrapper main .right-menu .switch .container input:checked ~ .checkmark:after {
+  display: block;
+}
+.wrapper main .right-menu .switch .container .checkmark:after {
+  top: 9px;
+  left: 9px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: white;
+}
+.wrapper main .right-menu .btn {
+  width: 100%;
+  height: 40px;
+  margin-bottom: 25px;
+  font-size: 20px;
+  border: none;
+  border-radius: 3px;
+  background-color: #2196F3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.24), 0px 0px 4px rgba(0, 0, 0, 0.12);
+  outline: none;
+  color: #ffffff;
+}
+.wrapper main .right-menu .btn:hover {
+  background-color: #25669b;
+}
+.wrapper main .right-menu form label.search-label {
+  position: relative;
+}
+.wrapper main .right-menu form input.search {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 3px 3px 0 0;
+  outline: none;
+  height: 40px;
+  font-size: 18px;
+  padding-left: 40px;
+}
+.wrapper main .right-menu form img {
+  position: absolute;
+  left: 11px;
+  top: 4px;
+  height: 20px;
+  width: 20px;
+}
+.wrapper main .right-menu form .btn.load {
+  border-radius: 0 0 3px 3px;
+}
+
+/*# sourceMappingURL=style.css.map */
