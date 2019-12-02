@@ -1,7 +1,5 @@
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-constant-condition */
-import "../styles/scss/style.scss";
-
 const currentInput = document.getElementById('current-color');
 const prevInput = document.getElementById('prev-color');
 const canvas = document.getElementById('canvas');
