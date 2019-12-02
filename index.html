@@ -1,0 +1,66 @@
+<!DOCTYPE>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>CodeJam - Canvas</title>
+    <script src="https://unpkg.com/netlify-auth-providers"></script>
+    <link href="https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <img class="menu" src="assets/icons/menu.svg" alt="Menu">
+            <h1>CodeJam - Pallete</h1>
+            <div class="right-header">
+                <button class="btn login"><img src="assets/icons/github.svg" alt="GitHub">Log in with GitHub</button>
+                <h3 class="username"></h3>
+                <img class="additional" src="assets/icons/additional.svg" alt="Additional">
+            </div>
+        </header>
+        <main>
+            <div class="left-menu">
+                <ul class="tools">
+                    <li class="fill-bucket"><img src="assets/icons/fill-bucket.svg">Fill bucket</li>
+                    <li class="choose-color"><img src="assets/icons/choose-color.svg">Choose color</li>
+                    <li class="pencil"><img src="assets/icons/pencil.svg">Pencil</li>
+                </ul>
+                <ul class="change-color">
+                    <li><input type="color" id="current-color" name="current-color" value="#BE5FF5"><label for="current-color">Current color</label></li>
+                    <li><input type="color" id="prev-color" name="prev-color" value="#FFEB3B" disabled><label for="prev-color">Prev color</label></li>
+                    <li><input type="color" id="red" name="red" value="#F74141" disabled><label for="red">red</label></li>
+                    <li><input type="color" id="blue" name="blue" value="#00BCD4" disabled><label for="blue">blue</label></li>
+                </ul>
+            </div>
+            <canvas id="canvas">Обновите браузер</canvas>
+            <div class="right-menu">
+                <div class="switch">
+                    <label class="container"><span class="size">128x128</span>
+                        <input class="draw-128x128" type="radio" name="radio" checked>
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="size">256x256</span>
+                        <input class="draw-256x256" type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container"><span class="size">512x512</span>
+                        <input class="draw-512x512" type="radio" name="radio">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <button class="btn clear">Clear</button>
+                <form>
+                    <label class="search-label" for="search">
+                        <input class="search" type="text" name="search" placeholder="Write any town">
+                        <img src="assets/icons/search.svg" alt="Search">
+                    </label>
+                    <button class="btn load">Load</button>
+                </form>
+                <button class="btn black-and-white">B&W</button>
+            </div>
+        </main>
+    </div>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
